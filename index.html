@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
   <body>
-    <header><h1>ReadTrack</h1></header>
+    <div id="top-container">
+      <header><h1>Read<u>Track</u></h1></header>
+      <h2>Books</h2>
+    </div>
+    <div id="drop-down">
+      <label for="book-selector" id="book-select-label"><b>TITLE</b></label>
+      <select id="book-selector">
+        <option value="algos-one">
+          Introduction to Algorithms
+        </option>
+        </select>
+    </div>
+    <div id="title-display">
+      <div id="image">
+        <img src="img/intro-to-algorithms.jpg" alt="Introduction to Algorithms" id="algorithms-img">
+      </div>
+      <div id="page-details">
+        <input type="text" id="current-page">
+        <input type="text" id="text-input">
+      </div>
+    </div>
+    <script src="js/handler.js"></script>
   </body>
 </html>
